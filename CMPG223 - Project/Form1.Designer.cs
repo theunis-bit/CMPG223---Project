@@ -62,7 +62,7 @@ namespace CMPG223___Project
             // 
             this.btnInsert.Location = new System.Drawing.Point(477, 75);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(75, 23);
+            this.btnInsert.Size = new System.Drawing.Size(121, 23);
             this.btnInsert.TabIndex = 2;
             this.btnInsert.Text = "Insert";
             this.btnInsert.UseVisualStyleBackColor = true;
@@ -71,7 +71,7 @@ namespace CMPG223___Project
             // 
             this.btnUpdate.Location = new System.Drawing.Point(477, 120);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.Size = new System.Drawing.Size(121, 23);
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -80,7 +80,7 @@ namespace CMPG223___Project
             // 
             this.btnDelete.Location = new System.Drawing.Point(477, 166);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(121, 23);
             this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
