@@ -34,7 +34,10 @@ namespace CMPG223___Project
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.tbScholarID = new System.Windows.Forms.TextBox();
+            this.tbTemperature = new System.Windows.Forms.TextBox();
+            this.tbSymptoms = new System.Windows.Forms.TextBox();
+            this.cbAttendance = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -49,54 +52,78 @@ namespace CMPG223___Project
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(108, 72);
+            this.label2.Location = new System.Drawing.Point(33, 74);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(57, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
+            this.label2.Text = "Scholar ID";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(108, 95);
+            this.label3.Location = new System.Drawing.Point(33, 104);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.Size = new System.Drawing.Size(67, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
+            this.label3.Text = "Temperature";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(108, 130);
+            this.label4.Location = new System.Drawing.Point(33, 134);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(55, 13);
             this.label4.TabIndex = 3;
-            this.label4.Text = "label4";
+            this.label4.Text = "Symptoms";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(71, 161);
+            this.label5.Location = new System.Drawing.Point(33, 169);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.Size = new System.Drawing.Size(62, 13);
             this.label5.TabIndex = 4;
-            this.label5.Text = "label5";
+            this.label5.Text = "Attendance";
             // 
-            // label6
+            // tbScholarID
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(33, 202);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "label6";
+            this.tbScholarID.Location = new System.Drawing.Point(120, 71);
+            this.tbScholarID.Name = "tbScholarID";
+            this.tbScholarID.Size = new System.Drawing.Size(100, 20);
+            this.tbScholarID.TabIndex = 5;
+            // 
+            // tbTemperature
+            // 
+            this.tbTemperature.Location = new System.Drawing.Point(120, 101);
+            this.tbTemperature.Name = "tbTemperature";
+            this.tbTemperature.Size = new System.Drawing.Size(100, 20);
+            this.tbTemperature.TabIndex = 6;
+            // 
+            // tbSymptoms
+            // 
+            this.tbSymptoms.Location = new System.Drawing.Point(120, 131);
+            this.tbSymptoms.Name = "tbSymptoms";
+            this.tbSymptoms.Size = new System.Drawing.Size(100, 20);
+            this.tbSymptoms.TabIndex = 7;
+            // 
+            // cbAttendance
+            // 
+            this.cbAttendance.AutoSize = true;
+            this.cbAttendance.Location = new System.Drawing.Point(120, 169);
+            this.cbAttendance.Name = "cbAttendance";
+            this.cbAttendance.Size = new System.Drawing.Size(15, 14);
+            this.cbAttendance.TabIndex = 8;
+            this.cbAttendance.UseVisualStyleBackColor = true;
             // 
             // frmUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 256);
-            this.Controls.Add(this.label6);
+            this.ClientSize = new System.Drawing.Size(307, 206);
+            this.Controls.Add(this.cbAttendance);
+            this.Controls.Add(this.tbSymptoms);
+            this.Controls.Add(this.tbTemperature);
+            this.Controls.Add(this.tbScholarID);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -116,6 +143,9 @@ namespace CMPG223___Project
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox tbScholarID;
+        private System.Windows.Forms.TextBox tbTemperature;
+        private System.Windows.Forms.TextBox tbSymptoms;
+        private System.Windows.Forms.CheckBox cbAttendance;
     }
 }
