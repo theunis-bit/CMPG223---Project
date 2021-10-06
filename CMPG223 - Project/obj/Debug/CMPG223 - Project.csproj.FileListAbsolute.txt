@@ -8,13 +8,5 @@ C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug
 C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223 - Project.csproj.CoreCompileInputs.cache
 C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223 - Project.exe
 C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223 - Project.pdb
-C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\bin\Debug\CMPG223 - Project.exe.config
-C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\bin\Debug\CMPG223 - Project.exe
-C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\bin\Debug\CMPG223 - Project.pdb
-C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223 - Project.csprojAssemblyReference.cache
-C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223___Project.frmMain.resources
-C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223___Project.Properties.Resources.resources
-C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223 - Project.csproj.GenerateResource.cache
-C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223 - Project.csproj.CoreCompileInputs.cache
-C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223 - Project.exe
-C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223 - Project.pdb
+C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\bin\Debug\Scholar.mdf
+C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\bin\Debug\Scholar_log.ldf
