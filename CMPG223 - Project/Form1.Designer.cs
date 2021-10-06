@@ -45,7 +45,7 @@ namespace CMPG223___Project
             // 
             this.lblDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(339, 9);
+            this.lblDate.Location = new System.Drawing.Point(198, 9);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(140, 23);
             this.lblDate.TabIndex = 0;
@@ -55,12 +55,12 @@ namespace CMPG223___Project
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 49);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(467, 288);
+            this.dataGridView1.Size = new System.Drawing.Size(424, 235);
             this.dataGridView1.TabIndex = 1;
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(517, 75);
+            this.btnInsert.Location = new System.Drawing.Point(477, 75);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(75, 23);
             this.btnInsert.TabIndex = 2;
@@ -69,7 +69,7 @@ namespace CMPG223___Project
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(517, 120);
+            this.btnUpdate.Location = new System.Drawing.Point(477, 120);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 3;
@@ -78,7 +78,7 @@ namespace CMPG223___Project
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(517, 166);
+            this.btnDelete.Location = new System.Drawing.Point(477, 166);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 4;
@@ -87,7 +87,7 @@ namespace CMPG223___Project
             // 
             // btnPrint
             // 
-            this.btnPrint.Location = new System.Drawing.Point(74, 367);
+            this.btnPrint.Location = new System.Drawing.Point(75, 322);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(75, 23);
             this.btnPrint.TabIndex = 5;
@@ -96,7 +96,7 @@ namespace CMPG223___Project
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(186, 367);
+            this.btnClear.Location = new System.Drawing.Point(187, 322);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 6;
@@ -105,7 +105,7 @@ namespace CMPG223___Project
             // 
             // btnLogOff
             // 
-            this.btnLogOff.Location = new System.Drawing.Point(306, 367);
+            this.btnLogOff.Location = new System.Drawing.Point(307, 322);
             this.btnLogOff.Name = "btnLogOff";
             this.btnLogOff.Size = new System.Drawing.Size(75, 23);
             this.btnLogOff.TabIndex = 7;
@@ -115,7 +115,7 @@ namespace CMPG223___Project
             // cbFilter
             // 
             this.cbFilter.FormattingEnabled = true;
-            this.cbFilter.Location = new System.Drawing.Point(517, 221);
+            this.cbFilter.Location = new System.Drawing.Point(477, 221);
             this.cbFilter.Name = "cbFilter";
             this.cbFilter.Size = new System.Drawing.Size(121, 21);
             this.cbFilter.TabIndex = 8;
@@ -124,7 +124,7 @@ namespace CMPG223___Project
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(863, 539);
+            this.ClientSize = new System.Drawing.Size(618, 380);
             this.Controls.Add(this.cbFilter);
             this.Controls.Add(this.btnLogOff);
             this.Controls.Add(this.btnClear);
