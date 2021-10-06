@@ -10,3 +10,4 @@ C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug
 C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223 - Project.pdb
 C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\bin\Debug\Scholar.mdf
 C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\bin\Debug\Scholar_log.ldf
+C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223___Project.Insert.resources
