@@ -64,7 +64,7 @@ namespace CMPG223___Project
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(121, 23);
             this.btnInsert.TabIndex = 2;
-            this.btnInsert.Text = "Insert";
+            this.btnInsert.Text = "Insert Scholar";
             this.btnInsert.UseVisualStyleBackColor = true;
             // 
             // btnUpdate
@@ -73,7 +73,7 @@ namespace CMPG223___Project
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(121, 23);
             this.btnUpdate.TabIndex = 3;
-            this.btnUpdate.Text = "Update";
+            this.btnUpdate.Text = "Update Scholar";
             this.btnUpdate.UseVisualStyleBackColor = true;
             // 
             // btnDelete
@@ -82,7 +82,7 @@ namespace CMPG223___Project
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(121, 23);
             this.btnDelete.TabIndex = 4;
-            this.btnDelete.Text = "Delete";
+            this.btnDelete.Text = "Delete Scholar";
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
             // btnPrint
