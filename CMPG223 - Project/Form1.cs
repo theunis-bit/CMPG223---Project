@@ -20,6 +20,7 @@ namespace CMPG223___Project
         private void frmMain_Load(object sender, EventArgs e)
         {
             lblDate.Text = "Date: " + DateTime.Today;
+
         }
 
        
