@@ -34,10 +34,10 @@ namespace CMPG223___Project
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.tbScholarID = new System.Windows.Forms.TextBox();
-            this.tbTemperature = new System.Windows.Forms.TextBox();
-            this.cbAttendance = new System.Windows.Forms.CheckBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.tbUpdateScholarID = new System.Windows.Forms.TextBox();
+            this.tbUpdateTemperature = new System.Windows.Forms.TextBox();
+            this.cbUdateAttendance = new System.Windows.Forms.CheckBox();
+            this.clbUpdateSymptoms = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -85,52 +85,52 @@ namespace CMPG223___Project
             this.label5.TabIndex = 4;
             this.label5.Text = "Attendance";
             // 
-            // tbScholarID
+            // tbUpdateScholarID
             // 
-            this.tbScholarID.Location = new System.Drawing.Point(120, 71);
-            this.tbScholarID.Name = "tbScholarID";
-            this.tbScholarID.Size = new System.Drawing.Size(120, 20);
-            this.tbScholarID.TabIndex = 5;
+            this.tbUpdateScholarID.Location = new System.Drawing.Point(120, 71);
+            this.tbUpdateScholarID.Name = "tbUpdateScholarID";
+            this.tbUpdateScholarID.Size = new System.Drawing.Size(120, 20);
+            this.tbUpdateScholarID.TabIndex = 5;
             // 
-            // tbTemperature
+            // tbUpdateTemperature
             // 
-            this.tbTemperature.Location = new System.Drawing.Point(120, 101);
-            this.tbTemperature.Name = "tbTemperature";
-            this.tbTemperature.Size = new System.Drawing.Size(120, 20);
-            this.tbTemperature.TabIndex = 6;
+            this.tbUpdateTemperature.Location = new System.Drawing.Point(120, 101);
+            this.tbUpdateTemperature.Name = "tbUpdateTemperature";
+            this.tbUpdateTemperature.Size = new System.Drawing.Size(120, 20);
+            this.tbUpdateTemperature.TabIndex = 6;
             // 
-            // cbAttendance
+            // cbUdateAttendance
             // 
-            this.cbAttendance.AutoSize = true;
-            this.cbAttendance.Location = new System.Drawing.Point(120, 234);
-            this.cbAttendance.Name = "cbAttendance";
-            this.cbAttendance.Size = new System.Drawing.Size(15, 14);
-            this.cbAttendance.TabIndex = 8;
-            this.cbAttendance.UseVisualStyleBackColor = true;
+            this.cbUdateAttendance.AutoSize = true;
+            this.cbUdateAttendance.Location = new System.Drawing.Point(120, 234);
+            this.cbUdateAttendance.Name = "cbUdateAttendance";
+            this.cbUdateAttendance.Size = new System.Drawing.Size(15, 14);
+            this.cbUdateAttendance.TabIndex = 8;
+            this.cbUdateAttendance.UseVisualStyleBackColor = true;
             // 
-            // checkedListBox1
+            // clbUpdateSymptoms
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.clbUpdateSymptoms.FormattingEnabled = true;
+            this.clbUpdateSymptoms.Items.AddRange(new object[] {
             "Chough",
             "Loss of smell",
             "Loss of taste",
             "Short of breath",
             "Sore troaht"});
-            this.checkedListBox1.Location = new System.Drawing.Point(120, 134);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(120, 79);
-            this.checkedListBox1.TabIndex = 9;
+            this.clbUpdateSymptoms.Location = new System.Drawing.Point(120, 134);
+            this.clbUpdateSymptoms.Name = "clbUpdateSymptoms";
+            this.clbUpdateSymptoms.Size = new System.Drawing.Size(120, 79);
+            this.clbUpdateSymptoms.TabIndex = 9;
             // 
             // frmUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(300, 302);
-            this.Controls.Add(this.checkedListBox1);
-            this.Controls.Add(this.cbAttendance);
-            this.Controls.Add(this.tbTemperature);
-            this.Controls.Add(this.tbScholarID);
+            this.Controls.Add(this.clbUpdateSymptoms);
+            this.Controls.Add(this.cbUdateAttendance);
+            this.Controls.Add(this.tbUpdateTemperature);
+            this.Controls.Add(this.tbUpdateScholarID);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -150,9 +150,9 @@ namespace CMPG223___Project
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox tbScholarID;
-        private System.Windows.Forms.TextBox tbTemperature;
-        private System.Windows.Forms.CheckBox cbAttendance;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.TextBox tbUpdateScholarID;
+        private System.Windows.Forms.TextBox tbUpdateTemperature;
+        private System.Windows.Forms.CheckBox cbUdateAttendance;
+        private System.Windows.Forms.CheckedListBox clbUpdateSymptoms;
     }
 }

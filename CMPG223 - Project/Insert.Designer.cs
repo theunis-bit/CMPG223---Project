@@ -30,10 +30,10 @@ namespace CMPG223___Project
         private void InitializeComponent()
         {
             this.btnAdd = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.tbxStudentID = new System.Windows.Forms.TextBox();
-            this.tbxName = new System.Windows.Forms.TextBox();
-            this.tbxSurname = new System.Windows.Forms.TextBox();
+            this.btnInsertCancel = new System.Windows.Forms.Button();
+            this.tbxInsertScholarID = new System.Windows.Forms.TextBox();
+            this.tbxInsertName = new System.Windows.Forms.TextBox();
+            this.tbxInsertSurname = new System.Windows.Forms.TextBox();
             this.lblScholasrID = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,35 +49,35 @@ namespace CMPG223___Project
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
             // 
-            // btnCancel
+            // btnInsertCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(224, 140);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 1;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnInsertCancel.Location = new System.Drawing.Point(224, 140);
+            this.btnInsertCancel.Name = "btnInsertCancel";
+            this.btnInsertCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnInsertCancel.TabIndex = 1;
+            this.btnInsertCancel.Text = "Cancel";
+            this.btnInsertCancel.UseVisualStyleBackColor = true;
             // 
-            // tbxStudentID
+            // tbxInsertScholarID
             // 
-            this.tbxStudentID.Location = new System.Drawing.Point(134, 45);
-            this.tbxStudentID.Name = "tbxStudentID";
-            this.tbxStudentID.Size = new System.Drawing.Size(165, 20);
-            this.tbxStudentID.TabIndex = 2;
+            this.tbxInsertScholarID.Location = new System.Drawing.Point(134, 45);
+            this.tbxInsertScholarID.Name = "tbxInsertScholarID";
+            this.tbxInsertScholarID.Size = new System.Drawing.Size(165, 20);
+            this.tbxInsertScholarID.TabIndex = 2;
             // 
-            // tbxName
+            // tbxInsertName
             // 
-            this.tbxName.Location = new System.Drawing.Point(134, 74);
-            this.tbxName.Name = "tbxName";
-            this.tbxName.Size = new System.Drawing.Size(165, 20);
-            this.tbxName.TabIndex = 3;
+            this.tbxInsertName.Location = new System.Drawing.Point(134, 74);
+            this.tbxInsertName.Name = "tbxInsertName";
+            this.tbxInsertName.Size = new System.Drawing.Size(165, 20);
+            this.tbxInsertName.TabIndex = 3;
             // 
-            // tbxSurname
+            // tbxInsertSurname
             // 
-            this.tbxSurname.Location = new System.Drawing.Point(134, 100);
-            this.tbxSurname.Name = "tbxSurname";
-            this.tbxSurname.Size = new System.Drawing.Size(165, 20);
-            this.tbxSurname.TabIndex = 4;
+            this.tbxInsertSurname.Location = new System.Drawing.Point(134, 100);
+            this.tbxInsertSurname.Name = "tbxInsertSurname";
+            this.tbxInsertSurname.Size = new System.Drawing.Size(165, 20);
+            this.tbxInsertSurname.TabIndex = 4;
             // 
             // lblScholasrID
             // 
@@ -124,10 +124,10 @@ namespace CMPG223___Project
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblScholasrID);
-            this.Controls.Add(this.tbxSurname);
-            this.Controls.Add(this.tbxName);
-            this.Controls.Add(this.tbxStudentID);
-            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.tbxInsertSurname);
+            this.Controls.Add(this.tbxInsertName);
+            this.Controls.Add(this.tbxInsertScholarID);
+            this.Controls.Add(this.btnInsertCancel);
             this.Controls.Add(this.btnAdd);
             this.Name = "Insert";
             this.Text = "Insert";
@@ -139,10 +139,10 @@ namespace CMPG223___Project
         #endregion
 
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.TextBox tbxStudentID;
-        private System.Windows.Forms.TextBox tbxName;
-        private System.Windows.Forms.TextBox tbxSurname;
+        private System.Windows.Forms.Button btnInsertCancel;
+        private System.Windows.Forms.TextBox tbxInsertScholarID;
+        private System.Windows.Forms.TextBox tbxInsertName;
+        private System.Windows.Forms.TextBox tbxInsertSurname;
         private System.Windows.Forms.Label lblScholasrID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
