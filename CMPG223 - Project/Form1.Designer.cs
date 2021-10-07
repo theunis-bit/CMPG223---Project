@@ -52,6 +52,7 @@ namespace CMPG223___Project
             this.lblSymtoms = new System.Windows.Forms.Label();
             this.tbTemp = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -170,6 +171,7 @@ namespace CMPG223___Project
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btnSearch);
             this.tabPage2.Controls.Add(this.tbTemp);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.tbSymptoms);
@@ -277,6 +279,15 @@ namespace CMPG223___Project
             this.label5.TabIndex = 9;
             this.label5.Text = "Temperature";
             // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(483, 129);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 11;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -321,6 +332,7 @@ namespace CMPG223___Project
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbSymptoms;
         private System.Windows.Forms.Label lblSymtoms;
+        private System.Windows.Forms.Button btnSearch;
     }
 }
 
