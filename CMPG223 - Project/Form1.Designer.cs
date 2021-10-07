@@ -66,6 +66,7 @@ namespace CMPG223___Project
             this.btnInsert.TabIndex = 2;
             this.btnInsert.Text = "Insert Scholar";
             this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // btnUpdate
             // 
@@ -75,6 +76,7 @@ namespace CMPG223___Project
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.Text = "Update Scholar";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 

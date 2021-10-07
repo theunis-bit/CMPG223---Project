@@ -1,7 +1,7 @@
 ﻿
 namespace CMPG223___Project
 {
-    partial class Insert
+    partial class frmInsert
     {
         /// <summary>
         /// Required designer variable.
@@ -115,7 +115,7 @@ namespace CMPG223___Project
             this.lblScholarDetails.TabIndex = 8;
             this.lblScholarDetails.Text = "Enter Scholar details:";
             // 
-            // Insert
+            // frmInsert
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -129,7 +129,7 @@ namespace CMPG223___Project
             this.Controls.Add(this.tbxInsertScholarID);
             this.Controls.Add(this.btnInsertCancel);
             this.Controls.Add(this.btnAdd);
-            this.Name = "Insert";
+            this.Name = "frmInsert";
             this.Text = "Insert";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CMPG223___Project
 {
-    public partial class Insert : Form
+    public partial class frmInsert : Form
     {
-        public Insert()
+        public frmInsert()
         {
             InitializeComponent();
         }
