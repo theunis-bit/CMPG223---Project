@@ -38,14 +38,27 @@ namespace CMPG223___Project
             this.btnClear = new System.Windows.Forms.Button();
             this.btnLogOff = new System.Windows.Forms.Button();
             this.cbFilter = new System.Windows.Forms.ComboBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.lblDisplay = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblDate
             // 
             this.lblDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(198, 9);
+            this.lblDate.Location = new System.Drawing.Point(196, 41);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(140, 23);
             this.lblDate.TabIndex = 0;
@@ -53,14 +66,14 @@ namespace CMPG223___Project
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 49);
+            this.dataGridView1.Location = new System.Drawing.Point(10, 81);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(424, 235);
             this.dataGridView1.TabIndex = 1;
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(477, 75);
+            this.btnInsert.Location = new System.Drawing.Point(475, 107);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(121, 23);
             this.btnInsert.TabIndex = 2;
@@ -69,7 +82,7 @@ namespace CMPG223___Project
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(477, 120);
+            this.btnUpdate.Location = new System.Drawing.Point(475, 152);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(121, 23);
             this.btnUpdate.TabIndex = 3;
@@ -78,7 +91,7 @@ namespace CMPG223___Project
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(477, 166);
+            this.btnDelete.Location = new System.Drawing.Point(475, 198);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(121, 23);
             this.btnDelete.TabIndex = 4;
@@ -87,7 +100,7 @@ namespace CMPG223___Project
             // 
             // btnPrint
             // 
-            this.btnPrint.Location = new System.Drawing.Point(75, 322);
+            this.btnPrint.Location = new System.Drawing.Point(73, 354);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(75, 23);
             this.btnPrint.TabIndex = 5;
@@ -96,7 +109,7 @@ namespace CMPG223___Project
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(187, 322);
+            this.btnClear.Location = new System.Drawing.Point(185, 354);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 6;
@@ -105,7 +118,7 @@ namespace CMPG223___Project
             // 
             // btnLogOff
             // 
-            this.btnLogOff.Location = new System.Drawing.Point(307, 322);
+            this.btnLogOff.Location = new System.Drawing.Point(305, 354);
             this.btnLogOff.Name = "btnLogOff";
             this.btnLogOff.Size = new System.Drawing.Size(75, 23);
             this.btnLogOff.TabIndex = 7;
@@ -115,29 +128,127 @@ namespace CMPG223___Project
             // cbFilter
             // 
             this.cbFilter.FormattingEnabled = true;
-            this.cbFilter.Location = new System.Drawing.Point(477, 221);
+            this.cbFilter.Location = new System.Drawing.Point(475, 253);
             this.cbFilter.Name = "cbFilter";
             this.cbFilter.Size = new System.Drawing.Size(121, 21);
             this.cbFilter.TabIndex = 8;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(632, 462);
+            this.tabControl1.TabIndex = 9;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.lblDate);
+            this.tabPage1.Controls.Add(this.cbFilter);
+            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Controls.Add(this.btnLogOff);
+            this.tabPage1.Controls.Add(this.btnInsert);
+            this.tabPage1.Controls.Add(this.btnClear);
+            this.tabPage1.Controls.Add(this.btnUpdate);
+            this.tabPage1.Controls.Add(this.btnPrint);
+            this.tabPage1.Controls.Add(this.btnDelete);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(624, 436);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Scholars";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.lblDisplay);
+            this.tabPage2.Controls.Add(this.textBox3);
+            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(624, 436);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Search";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(72, 58);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Scholar ID";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(72, 95);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Scholar Name";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(72, 130);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(88, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Scholar Surname";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(215, 55);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 3;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(215, 92);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 4;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(215, 127);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 5;
+            // 
+            // lblDisplay
+            // 
+            this.lblDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDisplay.Location = new System.Drawing.Point(7, 170);
+            this.lblDisplay.Name = "lblDisplay";
+            this.lblDisplay.Size = new System.Drawing.Size(611, 253);
+            this.lblDisplay.TabIndex = 6;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(618, 380);
-            this.Controls.Add(this.cbFilter);
-            this.Controls.Add(this.btnLogOff);
-            this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.btnPrint);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.btnInsert);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.lblDate);
+            this.ClientSize = new System.Drawing.Size(1200, 646);
+            this.Controls.Add(this.tabControl1);
             this.Name = "frmMain";
             this.Text = "Main";
             this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -154,6 +265,16 @@ namespace CMPG223___Project
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnLogOff;
         private System.Windows.Forms.ComboBox cbFilter;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblDisplay;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

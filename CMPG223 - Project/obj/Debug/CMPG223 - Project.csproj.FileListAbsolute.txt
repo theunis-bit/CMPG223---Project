@@ -10,3 +10,4 @@ C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug
 C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223 - Project.pdb
 C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223___Project.Insert.resources
 C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223___Project.frmUpdate.resources
+C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223___Project.frmRegister.resources
