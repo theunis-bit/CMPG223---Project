@@ -41,7 +41,6 @@ namespace CMPG223___Project
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.lblDisplay = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -53,6 +52,7 @@ namespace CMPG223___Project
             this.tbTemp = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.lbDisplay = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -171,12 +171,12 @@ namespace CMPG223___Project
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.lbDisplay);
             this.tabPage2.Controls.Add(this.btnSearch);
             this.tabPage2.Controls.Add(this.tbTemp);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.tbSymptoms);
             this.tabPage2.Controls.Add(this.lblSymtoms);
-            this.tabPage2.Controls.Add(this.lblDisplay);
             this.tabPage2.Controls.Add(this.textBox3);
             this.tabPage2.Controls.Add(this.textBox2);
             this.tabPage2.Controls.Add(this.textBox1);
@@ -190,14 +190,6 @@ namespace CMPG223___Project
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Search";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // lblDisplay
-            // 
-            this.lblDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblDisplay.Location = new System.Drawing.Point(7, 170);
-            this.lblDisplay.Name = "lblDisplay";
-            this.lblDisplay.Size = new System.Drawing.Size(611, 253);
-            this.lblDisplay.TabIndex = 6;
             // 
             // textBox3
             // 
@@ -288,6 +280,14 @@ namespace CMPG223___Project
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
             // 
+            // lbDisplay
+            // 
+            this.lbDisplay.FormattingEnabled = true;
+            this.lbDisplay.Location = new System.Drawing.Point(6, 185);
+            this.lbDisplay.Name = "lbDisplay";
+            this.lbDisplay.Size = new System.Drawing.Size(612, 238);
+            this.lbDisplay.TabIndex = 12;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -324,7 +324,6 @@ namespace CMPG223___Project
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblDisplay;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
@@ -333,6 +332,7 @@ namespace CMPG223___Project
         private System.Windows.Forms.TextBox tbSymptoms;
         private System.Windows.Forms.Label lblSymtoms;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.ListBox lbDisplay;
     }
 }
 
