@@ -38,6 +38,8 @@ namespace CMPG223___Project
             this.tbUpdateTemperature = new System.Windows.Forms.TextBox();
             this.cbUdateAttendance = new System.Windows.Forms.CheckBox();
             this.clbUpdateSymptoms = new System.Windows.Forms.CheckedListBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnUpdateCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -122,11 +124,31 @@ namespace CMPG223___Project
             this.clbUpdateSymptoms.Size = new System.Drawing.Size(120, 79);
             this.clbUpdateSymptoms.TabIndex = 9;
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(51, 267);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 10;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdateCancel
+            // 
+            this.btnUpdateCancel.Location = new System.Drawing.Point(165, 267);
+            this.btnUpdateCancel.Name = "btnUpdateCancel";
+            this.btnUpdateCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdateCancel.TabIndex = 11;
+            this.btnUpdateCancel.Text = "Cancel";
+            this.btnUpdateCancel.UseVisualStyleBackColor = true;
+            // 
             // frmUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(300, 302);
+            this.Controls.Add(this.btnUpdateCancel);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.clbUpdateSymptoms);
             this.Controls.Add(this.cbUdateAttendance);
             this.Controls.Add(this.tbUpdateTemperature);
@@ -154,5 +176,7 @@ namespace CMPG223___Project
         private System.Windows.Forms.TextBox tbUpdateTemperature;
         private System.Windows.Forms.CheckBox cbUdateAttendance;
         private System.Windows.Forms.CheckedListBox clbUpdateSymptoms;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnUpdateCancel;
     }
 }
