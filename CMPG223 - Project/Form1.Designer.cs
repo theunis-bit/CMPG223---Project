@@ -37,7 +37,6 @@ namespace CMPG223___Project
             this.btnPrint = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnLogOff = new System.Windows.Forms.Button();
-            this.cbFilter = new System.Windows.Forms.ComboBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -132,14 +131,6 @@ namespace CMPG223___Project
             this.btnLogOff.Text = "Log off";
             this.btnLogOff.UseVisualStyleBackColor = true;
             // 
-            // cbFilter
-            // 
-            this.cbFilter.FormattingEnabled = true;
-            this.cbFilter.Location = new System.Drawing.Point(475, 253);
-            this.cbFilter.Name = "cbFilter";
-            this.cbFilter.Size = new System.Drawing.Size(121, 21);
-            this.cbFilter.TabIndex = 8;
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
@@ -153,7 +144,6 @@ namespace CMPG223___Project
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.lblDate);
-            this.tabPage1.Controls.Add(this.cbFilter);
             this.tabPage1.Controls.Add(this.dataGridView1);
             this.tabPage1.Controls.Add(this.btnLogOff);
             this.tabPage1.Controls.Add(this.btnInsert);
@@ -317,7 +307,6 @@ namespace CMPG223___Project
         private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnLogOff;
-        private System.Windows.Forms.ComboBox cbFilter;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
