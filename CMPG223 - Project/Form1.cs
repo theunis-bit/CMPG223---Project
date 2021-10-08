@@ -29,7 +29,8 @@ namespace CMPG223___Project
         private void frmMain_Load(object sender, EventArgs e)
         {
             lblDate.Text = "Date: " + DateTime.Today;
-            
+
+            lbDisplay.Items.Add("ScholarID\tName\tSurname");
             Launch();
         }
 
@@ -132,11 +133,13 @@ namespace CMPG223___Project
                 
                 comm = new SqlCommand(sql, conn);
                 theReader = comm.ExecuteReader();
+                lbDisplay.Items.Add("ScholarID\tName\tSurname");
+
                 while (theReader.Read())
                 {
 
                     
-                    lbDisplay.Items.Add(theReader.GetValue(0) + "\t" + theReader.GetValue(1) + "\t" + theReader.GetValue(2) + "\t" + theReader.GetValue(3));
+                    lbDisplay.Items.Add(theReader.GetValue(0) + "\t\t" + theReader.GetValue(1) + "\t" + theReader.GetValue(2) + "\t" + theReader.GetValue(3));
 
                 }
 
