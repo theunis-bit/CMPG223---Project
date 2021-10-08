@@ -48,6 +48,7 @@ namespace CMPG223___Project
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnInsertCancel
             // 
@@ -57,6 +58,7 @@ namespace CMPG223___Project
             this.btnInsertCancel.TabIndex = 1;
             this.btnInsertCancel.Text = "Cancel";
             this.btnInsertCancel.UseVisualStyleBackColor = true;
+            this.btnInsertCancel.Click += new System.EventHandler(this.btnInsertCancel_Click);
             // 
             // tbxInsertScholarID
             // 
