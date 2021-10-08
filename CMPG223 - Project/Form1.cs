@@ -18,7 +18,7 @@ namespace CMPG223___Project
             InitializeComponent();
         }
 
-        string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\ScholarData.mdf;Integrated Security=True";
+        string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\ScholarData.mdf;Integrated Security=True";
         SqlConnection conn;
         SqlCommand comm;
         SqlDataAdapter adap;
@@ -29,7 +29,7 @@ namespace CMPG223___Project
         private void frmMain_Load(object sender, EventArgs e)
         {
             lblDate.Text = "Date: " + DateTime.Today;
-
+            
             Launch();
         }
 
@@ -108,6 +108,7 @@ namespace CMPG223___Project
         private void btnSearch_Click(object sender, EventArgs e)
         {
             lbDisplay.Items.Clear();
+            
             try
             {
 
@@ -128,11 +129,13 @@ namespace CMPG223___Project
 
                 //listbox
 
+                
                 comm = new SqlCommand(sql, conn);
                 theReader = comm.ExecuteReader();
                 while (theReader.Read())
                 {
 
+                    
                     lbDisplay.Items.Add(theReader.GetValue(0) + "\t" + theReader.GetValue(1) + "\t" + theReader.GetValue(2) + "\t" + theReader.GetValue(3));
 
                 }

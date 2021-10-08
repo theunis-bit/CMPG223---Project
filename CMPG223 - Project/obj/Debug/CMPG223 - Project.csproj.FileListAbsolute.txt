@@ -28,3 +28,5 @@ C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj
 C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223 - Project.pdb
 C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\bin\Debug\ScholarData.mdf
 C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\bin\Debug\ScholarData_log.ldf
+C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\bin\Debug\ScholarData.mdf
+C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\bin\Debug\ScholarData_log.ldf
