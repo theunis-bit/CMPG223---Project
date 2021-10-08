@@ -30,7 +30,7 @@ namespace CMPG223___Project
         {
             lblDate.Text = "Date: " + DateTime.Today;
 
-            lbDisplay.Items.Add("ScholarID\tName\tSurname");
+            lbDisplay.Items.Add("ScholarID\tName\tSurname\tAttendance\tSymptoms\tTemperature");
             Launch();
         }
 
@@ -133,7 +133,7 @@ namespace CMPG223___Project
                 
                 comm = new SqlCommand(sql, conn);
                 theReader = comm.ExecuteReader();
-                lbDisplay.Items.Add("ScholarID\tName\tSurname");
+                lbDisplay.Items.Add("ScholarID\tName\tSurname\tAttendance\tSymptoms\tTemperature");
 
                 while (theReader.Read())
                 {
