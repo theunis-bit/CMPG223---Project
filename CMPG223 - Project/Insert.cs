@@ -16,5 +16,30 @@ namespace CMPG223___Project
         {
             InitializeComponent();
         }
+        public string name;
+        public string surname;
+        public int ID;
+
+        private void btnInsertCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                name = tbxInsertName.Text;
+                surname = tbxInsertSurname.Text;
+                ID = int.Parse(tbxInsertScholarID.Text);
+                this.Close();
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message);
+            }
+
+        }
+
+
     }
 }

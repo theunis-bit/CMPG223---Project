@@ -30,7 +30,7 @@ namespace CMPG223___Project
         private void InitializeComponent()
         {
             this.lblDate = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dbView = new System.Windows.Forms.DataGridView();
             this.btnInsert = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -40,19 +40,20 @@ namespace CMPG223___Project
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lbDisplay = new System.Windows.Forms.ListBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.tbTemp = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbSymptoms = new System.Windows.Forms.TextBox();
+            this.lblSymtoms = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tbSymptoms = new System.Windows.Forms.TextBox();
-            this.lblSymtoms = new System.Windows.Forms.Label();
-            this.tbTemp = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.lbDisplay = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.cbxID = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dbView)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -67,17 +68,17 @@ namespace CMPG223___Project
             this.lblDate.Size = new System.Drawing.Size(140, 23);
             this.lblDate.TabIndex = 0;
             // 
-            // dataGridView1
+            // dbView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 81);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(424, 235);
-            this.dataGridView1.TabIndex = 1;
+            this.dbView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dbView.Location = new System.Drawing.Point(10, 81);
+            this.dbView.Name = "dbView";
+            this.dbView.Size = new System.Drawing.Size(623, 235);
+            this.dbView.TabIndex = 1;
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(475, 107);
+            this.btnInsert.Location = new System.Drawing.Point(639, 81);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(121, 23);
             this.btnInsert.TabIndex = 2;
@@ -87,7 +88,7 @@ namespace CMPG223___Project
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(475, 152);
+            this.btnUpdate.Location = new System.Drawing.Point(639, 119);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(121, 23);
             this.btnUpdate.TabIndex = 3;
@@ -97,12 +98,13 @@ namespace CMPG223___Project
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(475, 198);
+            this.btnDelete.Location = new System.Drawing.Point(639, 206);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(121, 23);
             this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "Delete Scholar";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnPrint
             // 
@@ -138,13 +140,14 @@ namespace CMPG223___Project
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(632, 462);
+            this.tabControl1.Size = new System.Drawing.Size(774, 488);
             this.tabControl1.TabIndex = 9;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.cbxID);
             this.tabPage1.Controls.Add(this.lblDate);
-            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Controls.Add(this.dbView);
             this.tabPage1.Controls.Add(this.btnLogOff);
             this.tabPage1.Controls.Add(this.btnInsert);
             this.tabPage1.Controls.Add(this.btnClear);
@@ -154,7 +157,7 @@ namespace CMPG223___Project
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(624, 436);
+            this.tabPage1.Size = new System.Drawing.Size(766, 462);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Scholars";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -176,10 +179,60 @@ namespace CMPG223___Project
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(624, 436);
+            this.tabPage2.Size = new System.Drawing.Size(766, 462);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Search";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // lbDisplay
+            // 
+            this.lbDisplay.FormattingEnabled = true;
+            this.lbDisplay.Location = new System.Drawing.Point(6, 185);
+            this.lbDisplay.Name = "lbDisplay";
+            this.lbDisplay.Size = new System.Drawing.Size(612, 238);
+            this.lbDisplay.TabIndex = 12;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(483, 129);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 11;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // tbTemp
+            // 
+            this.tbTemp.Location = new System.Drawing.Point(483, 79);
+            this.tbTemp.Name = "tbTemp";
+            this.tbTemp.Size = new System.Drawing.Size(100, 20);
+            this.tbTemp.TabIndex = 10;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(340, 82);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Temperature";
+            // 
+            // tbSymptoms
+            // 
+            this.tbSymptoms.Location = new System.Drawing.Point(483, 42);
+            this.tbSymptoms.Name = "tbSymptoms";
+            this.tbSymptoms.Size = new System.Drawing.Size(100, 20);
+            this.tbSymptoms.TabIndex = 8;
+            // 
+            // lblSymtoms
+            // 
+            this.lblSymtoms.AutoSize = true;
+            this.lblSymtoms.Location = new System.Drawing.Point(340, 45);
+            this.lblSymtoms.Name = "lblSymtoms";
+            this.lblSymtoms.Size = new System.Drawing.Size(49, 13);
+            this.lblSymtoms.TabIndex = 7;
+            this.lblSymtoms.Text = "Symtoms";
             // 
             // textBox3
             // 
@@ -229,65 +282,24 @@ namespace CMPG223___Project
             this.label1.TabIndex = 0;
             this.label1.Text = "Scholar ID";
             // 
-            // tbSymptoms
+            // cbxID
             // 
-            this.tbSymptoms.Location = new System.Drawing.Point(483, 42);
-            this.tbSymptoms.Name = "tbSymptoms";
-            this.tbSymptoms.Size = new System.Drawing.Size(100, 20);
-            this.tbSymptoms.TabIndex = 8;
-            // 
-            // lblSymtoms
-            // 
-            this.lblSymtoms.AutoSize = true;
-            this.lblSymtoms.Location = new System.Drawing.Point(340, 45);
-            this.lblSymtoms.Name = "lblSymtoms";
-            this.lblSymtoms.Size = new System.Drawing.Size(49, 13);
-            this.lblSymtoms.TabIndex = 7;
-            this.lblSymtoms.Text = "Symtoms";
-            // 
-            // tbTemp
-            // 
-            this.tbTemp.Location = new System.Drawing.Point(483, 79);
-            this.tbTemp.Name = "tbTemp";
-            this.tbTemp.Size = new System.Drawing.Size(100, 20);
-            this.tbTemp.TabIndex = 10;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(340, 82);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Temperature";
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(483, 129);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch.TabIndex = 11;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            // 
-            // lbDisplay
-            // 
-            this.lbDisplay.FormattingEnabled = true;
-            this.lbDisplay.Location = new System.Drawing.Point(6, 185);
-            this.lbDisplay.Name = "lbDisplay";
-            this.lbDisplay.Size = new System.Drawing.Size(612, 238);
-            this.lbDisplay.TabIndex = 12;
+            this.cbxID.FormattingEnabled = true;
+            this.cbxID.Location = new System.Drawing.Point(639, 161);
+            this.cbxID.Name = "cbxID";
+            this.cbxID.Size = new System.Drawing.Size(121, 21);
+            this.cbxID.TabIndex = 8;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 546);
+            this.ClientSize = new System.Drawing.Size(798, 546);
             this.Controls.Add(this.tabControl1);
             this.Name = "frmMain";
             this.Text = "Main";
             this.Load += new System.EventHandler(this.frmMain_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbView)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
@@ -300,7 +312,7 @@ namespace CMPG223___Project
         #endregion
 
         private System.Windows.Forms.Label lblDate;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dbView;
         private System.Windows.Forms.Button btnInsert;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
@@ -322,6 +334,7 @@ namespace CMPG223___Project
         private System.Windows.Forms.Label lblSymtoms;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.ListBox lbDisplay;
+        private System.Windows.Forms.ComboBox cbxID;
     }
 }
 

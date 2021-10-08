@@ -33,10 +33,8 @@ namespace CMPG223___Project
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.tbUpdateScholarID = new System.Windows.Forms.TextBox();
             this.tbUpdateTemperature = new System.Windows.Forms.TextBox();
-            this.cbUdateAttendance = new System.Windows.Forms.CheckBox();
             this.clbUpdateSymptoms = new System.Windows.Forms.CheckedListBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnUpdateCancel = new System.Windows.Forms.Button();
@@ -78,15 +76,6 @@ namespace CMPG223___Project
             this.label4.TabIndex = 3;
             this.label4.Text = "Symptoms";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(33, 234);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Attendance";
-            // 
             // tbUpdateScholarID
             // 
             this.tbUpdateScholarID.Location = new System.Drawing.Point(120, 71);
@@ -100,15 +89,6 @@ namespace CMPG223___Project
             this.tbUpdateTemperature.Name = "tbUpdateTemperature";
             this.tbUpdateTemperature.Size = new System.Drawing.Size(120, 20);
             this.tbUpdateTemperature.TabIndex = 6;
-            // 
-            // cbUdateAttendance
-            // 
-            this.cbUdateAttendance.AutoSize = true;
-            this.cbUdateAttendance.Location = new System.Drawing.Point(120, 234);
-            this.cbUdateAttendance.Name = "cbUdateAttendance";
-            this.cbUdateAttendance.Size = new System.Drawing.Size(15, 14);
-            this.cbUdateAttendance.TabIndex = 8;
-            this.cbUdateAttendance.UseVisualStyleBackColor = true;
             // 
             // clbUpdateSymptoms
             // 
@@ -132,6 +112,7 @@ namespace CMPG223___Project
             this.btnUpdate.TabIndex = 10;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnUpdateCancel
             // 
@@ -150,10 +131,8 @@ namespace CMPG223___Project
             this.Controls.Add(this.btnUpdateCancel);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.clbUpdateSymptoms);
-            this.Controls.Add(this.cbUdateAttendance);
             this.Controls.Add(this.tbUpdateTemperature);
             this.Controls.Add(this.tbUpdateScholarID);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -171,10 +150,8 @@ namespace CMPG223___Project
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbUpdateScholarID;
         private System.Windows.Forms.TextBox tbUpdateTemperature;
-        private System.Windows.Forms.CheckBox cbUdateAttendance;
         private System.Windows.Forms.CheckedListBox clbUpdateSymptoms;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnUpdateCancel;
