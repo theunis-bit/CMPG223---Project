@@ -39,6 +39,7 @@ namespace CMPG223___Project
             this.btnLogOff = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.cbxID = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.lbDisplay = new System.Windows.Forms.ListBox();
             this.btnSearch = new System.Windows.Forms.Button();
@@ -52,7 +53,6 @@ namespace CMPG223___Project
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbxID = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dbView)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -123,6 +123,7 @@ namespace CMPG223___Project
             this.btnClear.TabIndex = 6;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnLogOff
             // 
@@ -132,6 +133,7 @@ namespace CMPG223___Project
             this.btnLogOff.TabIndex = 7;
             this.btnLogOff.Text = "Log off";
             this.btnLogOff.UseVisualStyleBackColor = true;
+            this.btnLogOff.Click += new System.EventHandler(this.btnLogOff_Click);
             // 
             // tabControl1
             // 
@@ -161,6 +163,14 @@ namespace CMPG223___Project
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Scholars";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // cbxID
+            // 
+            this.cbxID.FormattingEnabled = true;
+            this.cbxID.Location = new System.Drawing.Point(639, 161);
+            this.cbxID.Name = "cbxID";
+            this.cbxID.Size = new System.Drawing.Size(121, 21);
+            this.cbxID.TabIndex = 8;
             // 
             // tabPage2
             // 
@@ -281,14 +291,6 @@ namespace CMPG223___Project
             this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Scholar ID";
-            // 
-            // cbxID
-            // 
-            this.cbxID.FormattingEnabled = true;
-            this.cbxID.Location = new System.Drawing.Point(639, 161);
-            this.cbxID.Name = "cbxID";
-            this.cbxID.Size = new System.Drawing.Size(121, 21);
-            this.cbxID.TabIndex = 8;
             // 
             // frmMain
             // 

@@ -36,12 +36,13 @@ namespace CMPG223___Project
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnLoginCancel = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnRegister = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(63, 55);
+            this.label1.Location = new System.Drawing.Point(32, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 0;
@@ -50,7 +51,7 @@ namespace CMPG223___Project
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(63, 95);
+            this.label2.Location = new System.Drawing.Point(34, 95);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 1;
@@ -58,35 +59,38 @@ namespace CMPG223___Project
             // 
             // tbLoginUsername
             // 
-            this.tbLoginUsername.Location = new System.Drawing.Point(154, 52);
+            this.tbLoginUsername.Location = new System.Drawing.Point(105, 49);
             this.tbLoginUsername.Name = "tbLoginUsername";
-            this.tbLoginUsername.Size = new System.Drawing.Size(100, 20);
+            this.tbLoginUsername.Size = new System.Drawing.Size(167, 20);
             this.tbLoginUsername.TabIndex = 2;
             // 
             // tbLoginPassword
             // 
-            this.tbLoginPassword.Location = new System.Drawing.Point(154, 92);
+            this.tbLoginPassword.Location = new System.Drawing.Point(105, 92);
             this.tbLoginPassword.Name = "tbLoginPassword";
-            this.tbLoginPassword.Size = new System.Drawing.Size(100, 20);
+            this.tbLoginPassword.PasswordChar = '*';
+            this.tbLoginPassword.Size = new System.Drawing.Size(167, 20);
             this.tbLoginPassword.TabIndex = 3;
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(66, 140);
+            this.btnLogin.Location = new System.Drawing.Point(12, 140);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnLoginCancel
             // 
-            this.btnLoginCancel.Location = new System.Drawing.Point(179, 140);
+            this.btnLoginCancel.Location = new System.Drawing.Point(197, 140);
             this.btnLoginCancel.Name = "btnLoginCancel";
             this.btnLoginCancel.Size = new System.Drawing.Size(75, 23);
             this.btnLoginCancel.TabIndex = 5;
             this.btnLoginCancel.Text = "Cancel";
             this.btnLoginCancel.UseVisualStyleBackColor = true;
+            this.btnLoginCancel.Click += new System.EventHandler(this.btnLoginCancel_Click);
             // 
             // label3
             // 
@@ -98,11 +102,22 @@ namespace CMPG223___Project
             this.label3.TabIndex = 6;
             this.label3.Text = "Login page";
             // 
+            // btnRegister
+            // 
+            this.btnRegister.Location = new System.Drawing.Point(105, 140);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(75, 23);
+            this.btnRegister.TabIndex = 7;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 183);
+            this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnLoginCancel);
             this.Controls.Add(this.btnLogin);
@@ -126,5 +141,6 @@ namespace CMPG223___Project
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnLoginCancel;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnRegister;
     }
 }

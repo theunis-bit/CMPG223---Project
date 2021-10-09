@@ -18,7 +18,7 @@ namespace CMPG223___Project
             InitializeComponent();
         }
 
-        string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\ScholarData.mdf;Integrated Security=True";
+        string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\ScholarData.mdf;Integrated Security=True";
         SqlConnection conn;
         SqlCommand comm;
         SqlDataAdapter adap;
@@ -30,7 +30,7 @@ namespace CMPG223___Project
         {
             lblDate.Text = "Date: " + DateTime.Today;
 
-            lbDisplay.Items.Add("ScholarID\tName\tSurname\tAttendance\tSymptoms\tTemperature");
+            lbDisplay.Items.Add("ScholarID\tName\tSurname\tSymptoms\tTemperature");
             Launch();
         }
 
@@ -55,6 +55,8 @@ namespace CMPG223___Project
 
                 conn.Close();
 
+                // display Scholar id in Combobox
+
                 cbxID.DisplayMember = "ScholarID";
                 cbxID.DataSource = ds.Tables["Table"];
             }
@@ -72,6 +74,8 @@ namespace CMPG223___Project
                 //direct to te insert form
                 frmInsert form = new frmInsert();
                 form.ShowDialog();
+
+                //insert into database
                 conn.Close();
                 conn.Open();
                 string sql = "INSERT INTO Dataset(ScholarID, Name, Surname) VALUES(@Id, @nm, @snm)";
@@ -99,6 +103,18 @@ namespace CMPG223___Project
                 frmUpdate form = new frmUpdate();
                 form.ShowDialog();
 
+                //update database
+                conn.Close();
+                conn.Open();
+                string sql = "UPDATE Dataset  SET Symptopms = @symp, Temprature = @temp WHERE ScholarID='" + form.ID + "'";
+                comm = new SqlCommand(sql, conn);
+                comm.Parameters.AddWithValue("@symp", form.symp);
+                comm.Parameters.AddWithValue("@temp", form.temp);
+                comm.ExecuteNonQuery();
+                Launch();
+
+                conn.Close();
+
             }
             catch (SqlException error)
             {
@@ -112,7 +128,7 @@ namespace CMPG223___Project
             
             try
             {
-
+                //travesrse database
                 conn.Open();
                 adap = new SqlDataAdapter();
                 ds = new DataSet();
@@ -133,13 +149,13 @@ namespace CMPG223___Project
                 
                 comm = new SqlCommand(sql, conn);
                 theReader = comm.ExecuteReader();
-                lbDisplay.Items.Add("ScholarID\tName\tSurname\tAttendance\tSymptoms\tTemperature");
+                lbDisplay.Items.Add("ScholarID\tName\tSurname\tSymptoms\tTemperature");
 
                 while (theReader.Read())
                 {
 
                     
-                    lbDisplay.Items.Add(theReader.GetValue(0) + "\t\t" + theReader.GetValue(1) + "\t" + theReader.GetValue(2) + "\t" + theReader.GetValue(3));
+                    lbDisplay.Items.Add(theReader.GetValue(0) + "\t\t" + theReader.GetValue(1) + "\t" + theReader.GetValue(2)  + "\t" + theReader.GetValue(4) + "\t" + theReader.GetValue(5));
 
                 }
 
@@ -157,7 +173,7 @@ namespace CMPG223___Project
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            //conn.Open();
+            // delete from database
             string sql = "DELETE FROM Dataset WHERE ScholarID = '" + cbxID.Text +" ' ";
             conn.Open();
             comm = new SqlCommand(sql, conn);
@@ -166,6 +182,29 @@ namespace CMPG223___Project
             adap.DeleteCommand.ExecuteNonQuery();
 
             Launch();
+            conn.Close();
+        }
+
+        private void btnLogOff_Click(object sender, EventArgs e)
+        {
+            //closes form
+            this.Close();
+            Login form = new Login();
+            form.ShowDialog();
+            
+
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            // clears specified coulmns from dataset
+            conn.Close();
+            conn.Open();
+            string sql = "UPDATE Dataset  SET Symptopms = null, Temprature = null, Attendance = Null";
+            comm = new SqlCommand(sql, conn);
+            comm.ExecuteNonQuery();
+            Launch();
+
             conn.Close();
         }
     }

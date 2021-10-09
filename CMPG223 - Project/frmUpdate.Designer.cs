@@ -35,9 +35,9 @@ namespace CMPG223___Project
             this.label4 = new System.Windows.Forms.Label();
             this.tbUpdateScholarID = new System.Windows.Forms.TextBox();
             this.tbUpdateTemperature = new System.Windows.Forms.TextBox();
-            this.clbUpdateSymptoms = new System.Windows.Forms.CheckedListBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnUpdateCancel = new System.Windows.Forms.Button();
+            this.cbSymptoms = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -90,20 +90,6 @@ namespace CMPG223___Project
             this.tbUpdateTemperature.Size = new System.Drawing.Size(120, 20);
             this.tbUpdateTemperature.TabIndex = 6;
             // 
-            // clbUpdateSymptoms
-            // 
-            this.clbUpdateSymptoms.FormattingEnabled = true;
-            this.clbUpdateSymptoms.Items.AddRange(new object[] {
-            "Chough",
-            "Loss of smell",
-            "Loss of taste",
-            "Short of breath",
-            "Sore troaht"});
-            this.clbUpdateSymptoms.Location = new System.Drawing.Point(120, 134);
-            this.clbUpdateSymptoms.Name = "clbUpdateSymptoms";
-            this.clbUpdateSymptoms.Size = new System.Drawing.Size(120, 79);
-            this.clbUpdateSymptoms.TabIndex = 9;
-            // 
             // btnUpdate
             // 
             this.btnUpdate.Location = new System.Drawing.Point(51, 267);
@@ -122,15 +108,31 @@ namespace CMPG223___Project
             this.btnUpdateCancel.TabIndex = 11;
             this.btnUpdateCancel.Text = "Cancel";
             this.btnUpdateCancel.UseVisualStyleBackColor = true;
+            this.btnUpdateCancel.Click += new System.EventHandler(this.btnUpdateCancel_Click);
+            // 
+            // cbSymptoms
+            // 
+            this.cbSymptoms.FormattingEnabled = true;
+            this.cbSymptoms.Items.AddRange(new object[] {
+            "None",
+            "Fever",
+            "Cough",
+            "Loss of taste or smell",
+            "Sore throat",
+            "Headache"});
+            this.cbSymptoms.Location = new System.Drawing.Point(119, 134);
+            this.cbSymptoms.Name = "cbSymptoms";
+            this.cbSymptoms.Size = new System.Drawing.Size(121, 21);
+            this.cbSymptoms.TabIndex = 12;
             // 
             // frmUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(300, 302);
+            this.Controls.Add(this.cbSymptoms);
             this.Controls.Add(this.btnUpdateCancel);
             this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.clbUpdateSymptoms);
             this.Controls.Add(this.tbUpdateTemperature);
             this.Controls.Add(this.tbUpdateScholarID);
             this.Controls.Add(this.label4);
@@ -139,6 +141,7 @@ namespace CMPG223___Project
             this.Controls.Add(this.label1);
             this.Name = "frmUpdate";
             this.Text = "Update";
+            this.Load += new System.EventHandler(this.frmUpdate_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,10 +153,10 @@ namespace CMPG223___Project
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tbUpdateScholarID;
         private System.Windows.Forms.TextBox tbUpdateTemperature;
-        private System.Windows.Forms.CheckedListBox clbUpdateSymptoms;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnUpdateCancel;
+        public System.Windows.Forms.TextBox tbUpdateScholarID;
+        private System.Windows.Forms.ComboBox cbSymptoms;
     }
 }

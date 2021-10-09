@@ -17,6 +17,31 @@ namespace CMPG223___Project
             InitializeComponent();
         }
 
-      
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if(tbLoginUsername.Text == "1234" && tbLoginPassword.Text == "Password")
+            {
+                frmMain form = new frmMain();
+                form.Show();
+                this.Hide();
+
+            }
+            else
+            {
+                MessageBox.Show("Inncorect password or username");
+            }
+           
+        }
+
+        private void btnLoginCancel_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            Register form = new Register();
+            form.ShowDialog();
+        }
     }
 }

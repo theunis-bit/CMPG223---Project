@@ -16,7 +16,7 @@ namespace CMPG223___Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMain());
+            Application.Run(new Login());
         }
     }
 }

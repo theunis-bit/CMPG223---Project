@@ -17,9 +17,26 @@ namespace CMPG223___Project
             InitializeComponent();
         }
 
+        public float temp;
+        public string symp;
+        public int ID;
+        private void frmUpdate_Load(object sender, EventArgs e)
+        {
+            cbSymptoms.SelectedIndex = 0;
+        }
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-
+            temp = float.Parse(tbUpdateTemperature.Text);
+            symp = cbSymptoms.SelectedItem.ToString();
+            ID = int.Parse(tbUpdateScholarID.Text);
+            this.Close();
         }
+
+        private void btnUpdateCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+
     }
 }
