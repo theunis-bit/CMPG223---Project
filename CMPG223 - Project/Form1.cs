@@ -135,8 +135,10 @@ namespace CMPG223___Project
 
 
                 string sql = @"SELECT * FROM Dataset WHERE ScholarID LIKE'%" + textBox1.Text + "%'";
+                
 
                 comm = new SqlCommand(sql, conn);
+                
 
                 adap.SelectCommand = comm;
                 adap.Fill(ds, "Table");
