@@ -18,7 +18,7 @@ namespace CMPG223___Project
             InitializeComponent();
         }
 
-        string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\ScholarData.mdf;Integrated Security=True";
+        string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\ScholarData.mdf;Integrated Security=True";
         SqlConnection conn;
         SqlCommand comm;
         SqlDataAdapter adap;
@@ -78,9 +78,9 @@ namespace CMPG223___Project
                 //insert into database
                 conn.Close();
                 conn.Open();
-                string sql = "INSERT INTO Dataset(ScholarID, Name, Surname) VALUES(@Id, @nm, @snm)";
+                string sql = "INSERT INTO Dataset(Name, Surname) VALUES(@nm, @snm)";
                 comm = new SqlCommand(sql, conn);
-                comm.Parameters.AddWithValue("@Id", form.ID);
+
                 comm.Parameters.AddWithValue("@nm", form.name);
                 comm.Parameters.AddWithValue("@snm", form.surname);
                 comm.ExecuteNonQuery();
@@ -157,7 +157,7 @@ namespace CMPG223___Project
                 {
 
                     
-                    lbDisplay.Items.Add(theReader.GetValue(0) + "\t\t" + theReader.GetValue(1) + "\t" + theReader.GetValue(2)  + "\t" + theReader.GetValue(4) + "\t" + theReader.GetValue(5));
+                    lbDisplay.Items.Add(theReader.GetValue(0) + "\t\t" + theReader.GetValue(1) + "\t" + theReader.GetValue(2)  + "\t" + theReader.GetValue(4) + "\t\t" + theReader.GetValue(5));
 
                 }
 
