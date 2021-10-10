@@ -30,7 +30,6 @@ namespace CMPG223___Project
             {
                 name = tbxInsertName.Text;
                 surname = tbxInsertSurname.Text;
-                ID = int.Parse(tbxInsertScholarID.Text);
                 this.Close();
             }
             catch (Exception error)
