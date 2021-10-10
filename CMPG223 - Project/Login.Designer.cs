@@ -34,7 +34,7 @@ namespace CMPG223___Project
             this.tbLoginUsername = new System.Windows.Forms.TextBox();
             this.tbLoginPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.btnLoginCancel = new System.Windows.Forms.Button();
+            this.btnLoginExit = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -82,15 +82,15 @@ namespace CMPG223___Project
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // btnLoginCancel
+            // btnLoginExit
             // 
-            this.btnLoginCancel.Location = new System.Drawing.Point(197, 140);
-            this.btnLoginCancel.Name = "btnLoginCancel";
-            this.btnLoginCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnLoginCancel.TabIndex = 5;
-            this.btnLoginCancel.Text = "Cancel";
-            this.btnLoginCancel.UseVisualStyleBackColor = true;
-            this.btnLoginCancel.Click += new System.EventHandler(this.btnLoginCancel_Click);
+            this.btnLoginExit.Location = new System.Drawing.Point(197, 140);
+            this.btnLoginExit.Name = "btnLoginExit";
+            this.btnLoginExit.Size = new System.Drawing.Size(75, 23);
+            this.btnLoginExit.TabIndex = 5;
+            this.btnLoginExit.Text = "Exit";
+            this.btnLoginExit.UseVisualStyleBackColor = true;
+            this.btnLoginExit.Click += new System.EventHandler(this.btnLoginCancel_Click);
             // 
             // label3
             // 
@@ -119,7 +119,7 @@ namespace CMPG223___Project
             this.ClientSize = new System.Drawing.Size(284, 183);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnLoginCancel);
+            this.Controls.Add(this.btnLoginExit);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.tbLoginPassword);
             this.Controls.Add(this.tbLoginUsername);
@@ -139,7 +139,7 @@ namespace CMPG223___Project
         private System.Windows.Forms.TextBox tbLoginUsername;
         private System.Windows.Forms.TextBox tbLoginPassword;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Button btnLoginCancel;
+        private System.Windows.Forms.Button btnLoginExit;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnRegister;
     }
