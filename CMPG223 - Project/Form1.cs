@@ -130,12 +130,13 @@ namespace CMPG223___Project
             try
             {
                 //travesrse database
+                conn.Close();
                 conn.Open();
                 adap = new SqlDataAdapter();
                 ds = new DataSet();
 
 
-                string sql = @"SELECT * FROM Dataset WHERE ScholarID LIKE'%" + textBox1.Text + "%'";
+                string sql = @"SELECT * FROM Dataset WHERE ScholarID LIKE'%" + textBox1.Text + "%'"; 
                 
 
                 comm = new SqlCommand(sql, conn);
@@ -165,7 +166,7 @@ namespace CMPG223___Project
 
                 conn.Close();
 
-
+                
             }
             catch (SqlException error)
             {
