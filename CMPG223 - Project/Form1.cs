@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace CMPG223___Project
 {
     public partial class frmMain : Form
@@ -18,7 +19,7 @@ namespace CMPG223___Project
             InitializeComponent();
         }
 
-        string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\ScholarData.mdf;Integrated Security=True";
+        string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\ScholarData.mdf;Integrated Security=True";
         SqlConnection conn;
         SqlCommand comm;
         SqlDataAdapter adap;
@@ -176,6 +177,7 @@ namespace CMPG223___Project
         private void btnDelete_Click(object sender, EventArgs e)
         {
             // delete from database
+            conn.Close();
             string sql = "DELETE FROM Dataset WHERE ScholarID = '" + cbxID.Text +" ' ";
             conn.Open();
             comm = new SqlCommand(sql, conn);
@@ -208,6 +210,22 @@ namespace CMPG223___Project
             Launch();
 
             conn.Close();
+        }
+
+        Bitmap bmp;
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            int height = dbView.Height;
+            dbView.Height = dbView.RowCount * dbView.RowTemplate.Height * 2;
+            bmp = new Bitmap(dbView.Width , dbView.Height);
+            dbView.DrawToBitmap(bmp, new Rectangle(0,0,dbView.Width, dbView.Height));
+            dbView.Height = height;
+            printPreviewDialog1.ShowDialog();
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(bmp, 0, 0);
         }
     }
     

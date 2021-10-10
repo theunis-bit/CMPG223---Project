@@ -29,6 +29,7 @@ namespace CMPG223___Project
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.lblDate = new System.Windows.Forms.Label();
             this.dbView = new System.Windows.Forms.DataGridView();
             this.btnInsert = new System.Windows.Forms.Button();
@@ -53,6 +54,8 @@ namespace CMPG223___Project
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             ((System.ComponentModel.ISupportInitialize)(this.dbView)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -71,14 +74,14 @@ namespace CMPG223___Project
             // dbView
             // 
             this.dbView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dbView.Location = new System.Drawing.Point(10, 81);
+            this.dbView.Location = new System.Drawing.Point(3, 81);
             this.dbView.Name = "dbView";
-            this.dbView.Size = new System.Drawing.Size(623, 235);
+            this.dbView.Size = new System.Drawing.Size(640, 235);
             this.dbView.TabIndex = 1;
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(639, 81);
+            this.btnInsert.Location = new System.Drawing.Point(649, 81);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(121, 23);
             this.btnInsert.TabIndex = 2;
@@ -88,7 +91,7 @@ namespace CMPG223___Project
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(639, 119);
+            this.btnUpdate.Location = new System.Drawing.Point(652, 119);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(121, 23);
             this.btnUpdate.TabIndex = 3;
@@ -98,7 +101,7 @@ namespace CMPG223___Project
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(639, 206);
+            this.btnDelete.Location = new System.Drawing.Point(649, 206);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(121, 23);
             this.btnDelete.TabIndex = 4;
@@ -114,6 +117,7 @@ namespace CMPG223___Project
             this.btnPrint.TabIndex = 5;
             this.btnPrint.Text = "Print";
             this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // btnClear
             // 
@@ -142,7 +146,7 @@ namespace CMPG223___Project
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(774, 488);
+            this.tabControl1.Size = new System.Drawing.Size(784, 488);
             this.tabControl1.TabIndex = 9;
             // 
             // tabPage1
@@ -159,7 +163,7 @@ namespace CMPG223___Project
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(766, 462);
+            this.tabPage1.Size = new System.Drawing.Size(776, 462);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Scholars";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -167,7 +171,7 @@ namespace CMPG223___Project
             // cbxID
             // 
             this.cbxID.FormattingEnabled = true;
-            this.cbxID.Location = new System.Drawing.Point(639, 161);
+            this.cbxID.Location = new System.Drawing.Point(649, 161);
             this.cbxID.Name = "cbxID";
             this.cbxID.Size = new System.Drawing.Size(121, 21);
             this.cbxID.TabIndex = 8;
@@ -292,6 +296,21 @@ namespace CMPG223___Project
             this.label1.TabIndex = 0;
             this.label1.Text = "Scholar ID";
             // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Document = this.printDocument1;
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -337,6 +356,8 @@ namespace CMPG223___Project
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.ListBox lbDisplay;
         private System.Windows.Forms.ComboBox cbxID;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }
 
