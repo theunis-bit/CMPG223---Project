@@ -157,7 +157,7 @@ namespace CMPG223___Project
                 {
 
                     
-                    lbDisplay.Items.Add(theReader.GetValue(0) + "\t\t" + theReader.GetValue(1) + "\t" + theReader.GetValue(2)  + "\t" + theReader.GetValue(4) + "\t" + theReader.GetValue(5));
+                    lbDisplay.Items.Add(theReader.GetValue(0) + "\t\t" + theReader.GetValue(1) + "\t" + theReader.GetValue(2)  + "\t" + theReader.GetValue(4) + "\t\t" + theReader.GetValue(5));
 
                 }
 
