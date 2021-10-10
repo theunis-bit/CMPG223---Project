@@ -19,7 +19,7 @@ namespace CMPG223___Project
             InitializeComponent();
         }
 
-        string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\ScholarData.mdf;Integrated Security=True";
+        string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\ScholarData.mdf;Integrated Security=True";
         SqlConnection conn;
         SqlCommand comm;
         SqlDataAdapter adap;
@@ -29,6 +29,7 @@ namespace CMPG223___Project
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+
             lblDate.Text = "Date: " + DateTime.Today;
 
             lbDisplay.Items.Add("ScholarID\tName\tSurname\tSymptoms\tTemperature");
@@ -176,7 +177,10 @@ namespace CMPG223___Project
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawImage(bmp, 0, 0);
+            // title
+            e.Graphics.DrawString("Date: " + DateTime.Today.ToString("MM-dd-yyyy") , new Font("Arial" ,16) , Brushes.Black , 95, 70 );
+            // database
+            e.Graphics.DrawImage(bmp, 100, 100);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
