@@ -38,10 +38,6 @@ namespace CMPG223___Project
             Environment.Exit(0);
         }
 
-        private void btnRegister_Click(object sender, EventArgs e)
-        {
-            Register form = new Register();
-            form.ShowDialog();
-        }
+        
     }
 }
