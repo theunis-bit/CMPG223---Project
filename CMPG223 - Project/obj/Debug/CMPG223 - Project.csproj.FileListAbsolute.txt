@@ -21,7 +21,6 @@ C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj
 C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223___Project.frmInsert.resources
 C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223___Project.Login.resources
 C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223___Project.Properties.Resources.resources
-C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223___Project.Register.resources
 C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223 - Project.csproj.GenerateResource.cache
 C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223 - Project.csproj.CoreCompileInputs.cache
 C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\obj\Debug\CMPG223 - Project.exe

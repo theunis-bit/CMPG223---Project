@@ -19,7 +19,7 @@ namespace CMPG223___Project
             InitializeComponent();
         }
 
-        string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\ScholarData.mdf;Integrated Security = True";
+        string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\ScholarData.mdf;Integrated Security=True";
         SqlConnection conn;
         SqlCommand comm;
         SqlDataAdapter adap;
@@ -123,57 +123,57 @@ namespace CMPG223___Project
             }
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            lbDisplay.Items.Clear();
+        //private void btnSearch_Click(object sender, EventArgs e)
+        //{
+        //    lbDisplay.Items.Clear();
             
-            try
-            {
-                //travesrse database
-                conn.Close();
-                conn.Open();
-                adap = new SqlDataAdapter();
-                ds = new DataSet();
+        //    try
+        //    {
+        //        //travesrse database
+        //        conn.Close();
+        //        conn.Open();
+        //        adap = new SqlDataAdapter();
+        //        ds = new DataSet();
 
 
-                string sql = @"SELECT * FROM Dataset WHERE ScholarID LIKE'%" + textBox1.Text + "%'"; 
+        //        string sql = @"SELECT * FROM Dataset WHERE ScholarID LIKE'%" + textBox1.Text + "%'"; 
                 
 
-                comm = new SqlCommand(sql, conn);
+        //        comm = new SqlCommand(sql, conn);
                 
 
-                adap.SelectCommand = comm;
-                adap.Fill(ds, "Table");
+        //        adap.SelectCommand = comm;
+        //        adap.Fill(ds, "Table");
 
-                dbView.DataSource = ds;
-                dbView.DataMember = "Table";
+        //        dbView.DataSource = ds;
+        //        dbView.DataMember = "Table";
 
-                //listbox
+        //        //listbox
 
                 
-                comm = new SqlCommand(sql, conn);
-                theReader = comm.ExecuteReader();
-                lbDisplay.Items.Add("ScholarID\tName\tSurname\tSymptoms\tTemperature");
+        //        comm = new SqlCommand(sql, conn);
+        //        theReader = comm.ExecuteReader();
+        //        lbDisplay.Items.Add("ScholarID\tName\tSurname\tSymptoms\tTemperature");
 
-                while (theReader.Read())
-                {
+        //        while (theReader.Read())
+        //        {
 
                     
-                    lbDisplay.Items.Add(theReader.GetValue(0) + "\t\t" + theReader.GetValue(1) + "\t" + theReader.GetValue(2)  + "\t" + theReader.GetValue(4) + "\t\t" + theReader.GetValue(5));
+        //            lbDisplay.Items.Add(theReader.GetValue(0) + "\t\t" + theReader.GetValue(1) + "\t" + theReader.GetValue(2)  + "\t" + theReader.GetValue(4) + "\t\t" + theReader.GetValue(5));
 
-                }
+        //        }
 
 
-                conn.Close();
+        //        conn.Close();
 
                 
-            }
-            catch (SqlException error)
-            {
-                MessageBox.Show(error.Message);
-            }
+        //    }
+        //    catch (SqlException error)
+        //    {
+        //        MessageBox.Show(error.Message);
+        //    }
 
-        }
+        //}
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -227,6 +227,257 @@ namespace CMPG223___Project
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawImage(bmp, 0, 0);
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            lbDisplay.Items.Clear();
+
+            try
+            {
+                //travesrse database
+                conn.Close();
+                conn.Open();
+                adap = new SqlDataAdapter();
+                ds = new DataSet();
+
+
+                string sql = @"SELECT * FROM Dataset WHERE ScholarID LIKE'%" + textBox1.Text + "%'";
+
+
+                comm = new SqlCommand(sql, conn);
+
+
+                adap.SelectCommand = comm;
+                adap.Fill(ds, "Table");
+
+                dbView.DataSource = ds;
+                dbView.DataMember = "Table";
+
+                //listbox
+
+
+                comm = new SqlCommand(sql, conn);
+                theReader = comm.ExecuteReader();
+                lbDisplay.Items.Add("ScholarID\tName\tSurname\tSymptoms\tTemperature");
+
+                while (theReader.Read())
+                {
+
+
+                    lbDisplay.Items.Add(theReader.GetValue(0) + "\t\t" + theReader.GetValue(1) + "\t" + theReader.GetValue(2) + "\t" + theReader.GetValue(4) + "\t\t" + theReader.GetValue(5));
+
+                }
+
+
+                conn.Close();
+
+
+            }
+            catch (SqlException error)
+            {
+                MessageBox.Show(error.Message);
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            lbDisplay.Items.Clear();
+            try
+            {
+                //travesrse database
+                conn.Close();
+                conn.Open();
+                adap = new SqlDataAdapter();
+                ds = new DataSet();
+
+
+                string sql = @"SELECT * FROM Dataset WHERE Name LIKE'%" + textBox2.Text + "%'";
+
+
+                comm = new SqlCommand(sql, conn);
+
+
+                adap.SelectCommand = comm;
+                adap.Fill(ds, "Table");
+
+                dbView.DataSource = ds;
+                dbView.DataMember = "Table";
+
+                //listbox
+
+
+                comm = new SqlCommand(sql, conn);
+                theReader = comm.ExecuteReader();
+                lbDisplay.Items.Add("ScholarID\tName\tSurname\tSymptoms\tTemperature");
+
+                while (theReader.Read())
+                {
+
+
+                    lbDisplay.Items.Add(theReader.GetValue(0) + "\t\t" + theReader.GetValue(1) + "\t" + theReader.GetValue(2) + "\t" + theReader.GetValue(4) + "\t\t" + theReader.GetValue(5));
+
+                }
+
+
+                conn.Close();
+
+
+            }
+            catch (SqlException error)
+            {
+                MessageBox.Show(error.Message);
+            }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            lbDisplay.Items.Clear();
+            try
+            {
+                //travesrse database
+                conn.Close();
+                conn.Open();
+                adap = new SqlDataAdapter();
+                ds = new DataSet();
+
+
+                string sql = @"SELECT * FROM Dataset WHERE Surname LIKE'%" + textBox3.Text + "%'";
+
+
+                comm = new SqlCommand(sql, conn);
+
+
+                adap.SelectCommand = comm;
+                adap.Fill(ds, "Table");
+
+                dbView.DataSource = ds;
+                dbView.DataMember = "Table";
+
+                //listbox
+
+
+                comm = new SqlCommand(sql, conn);
+                theReader = comm.ExecuteReader();
+                lbDisplay.Items.Add("ScholarID\tName\tSurname\tSymptoms\tTemperature");
+
+                while (theReader.Read())
+                {
+
+
+                    lbDisplay.Items.Add(theReader.GetValue(0) + "\t\t" + theReader.GetValue(1) + "\t" + theReader.GetValue(2) + "\t" + theReader.GetValue(4) + "\t\t" + theReader.GetValue(5));
+
+                }
+
+
+                conn.Close();
+
+
+            }
+            catch (SqlException error)
+            {
+                MessageBox.Show(error.Message);
+            }
+        }
+
+        private void tbSymptoms_TextChanged(object sender, EventArgs e)
+        {
+            lbDisplay.Items.Clear();
+            try
+            {
+                //travesrse database
+                conn.Close();
+                conn.Open();
+                adap = new SqlDataAdapter();
+                ds = new DataSet();
+
+
+                string sql = @"SELECT * FROM Dataset WHERE Symptopms LIKE'%" + tbSymptoms.Text + "%'";
+
+
+                comm = new SqlCommand(sql, conn);
+
+
+                adap.SelectCommand = comm;
+                adap.Fill(ds, "Table");
+
+                dbView.DataSource = ds;
+                dbView.DataMember = "Table";
+
+                //listbox
+
+
+                comm = new SqlCommand(sql, conn);
+                theReader = comm.ExecuteReader();
+                lbDisplay.Items.Add("ScholarID\tName\tSurname\tSymptoms\tTemperature");
+
+                while (theReader.Read())
+                {
+
+
+                    lbDisplay.Items.Add(theReader.GetValue(0) + "\t\t" + theReader.GetValue(1) + "\t" + theReader.GetValue(2) + "\t" + theReader.GetValue(4) + "\t\t" + theReader.GetValue(5));
+
+                }
+
+
+                conn.Close();
+
+
+            }
+            catch (SqlException error)
+            {
+                MessageBox.Show(error.Message);
+            }
+        }
+
+        private void tbTemp_TextChanged(object sender, EventArgs e)
+        {
+            lbDisplay.Items.Clear();
+            try
+            {
+                //travesrse database
+                conn.Close();
+                conn.Open();
+                adap = new SqlDataAdapter();
+                ds = new DataSet();
+
+
+                string sql = @"SELECT * FROM Dataset WHERE Temprature LIKE'%" + tbTemp.Text + "%'";
+
+
+                comm = new SqlCommand(sql, conn);
+
+
+                adap.SelectCommand = comm;
+                adap.Fill(ds, "Table");
+
+                dbView.DataSource = ds;
+                dbView.DataMember = "Table";
+
+                //listbox
+
+
+                comm = new SqlCommand(sql, conn);
+                theReader = comm.ExecuteReader();
+                lbDisplay.Items.Add("ScholarID\tName\tSurname\tSymptoms\tTemperature");
+
+                while (theReader.Read())
+                {
+
+
+                    lbDisplay.Items.Add(theReader.GetValue(0) + "\t\t" + theReader.GetValue(1) + "\t" + theReader.GetValue(2) + "\t" + theReader.GetValue(4) + "\t\t" + theReader.GetValue(5));
+
+                }
+
+
+                conn.Close();
+
+
+            }
+            catch (SqlException error)
+            {
+                MessageBox.Show(error.Message);
+            }
         }
     }
     

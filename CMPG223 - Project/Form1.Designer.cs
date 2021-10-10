@@ -193,7 +193,7 @@ namespace CMPG223___Project
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(766, 462);
+            this.tabPage2.Size = new System.Drawing.Size(776, 462);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Search";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -214,7 +214,6 @@ namespace CMPG223___Project
             this.btnSearch.TabIndex = 11;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // tbTemp
             // 
@@ -222,6 +221,7 @@ namespace CMPG223___Project
             this.tbTemp.Name = "tbTemp";
             this.tbTemp.Size = new System.Drawing.Size(100, 20);
             this.tbTemp.TabIndex = 10;
+            this.tbTemp.TextChanged += new System.EventHandler(this.tbTemp_TextChanged);
             // 
             // label5
             // 
@@ -238,6 +238,7 @@ namespace CMPG223___Project
             this.tbSymptoms.Name = "tbSymptoms";
             this.tbSymptoms.Size = new System.Drawing.Size(100, 20);
             this.tbSymptoms.TabIndex = 8;
+            this.tbSymptoms.TextChanged += new System.EventHandler(this.tbSymptoms_TextChanged);
             // 
             // lblSymtoms
             // 
@@ -254,6 +255,7 @@ namespace CMPG223___Project
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 5;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox2
             // 
@@ -261,6 +263,7 @@ namespace CMPG223___Project
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 4;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox1
             // 
@@ -268,6 +271,7 @@ namespace CMPG223___Project
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 3;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
