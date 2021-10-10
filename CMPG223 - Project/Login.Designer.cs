@@ -36,7 +36,6 @@ namespace CMPG223___Project
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnLoginExit = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnRegister = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -74,7 +73,7 @@ namespace CMPG223___Project
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(12, 140);
+            this.btnLogin.Location = new System.Drawing.Point(46, 140);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 4;
@@ -84,7 +83,7 @@ namespace CMPG223___Project
             // 
             // btnLoginExit
             // 
-            this.btnLoginExit.Location = new System.Drawing.Point(197, 140);
+            this.btnLoginExit.Location = new System.Drawing.Point(173, 140);
             this.btnLoginExit.Name = "btnLoginExit";
             this.btnLoginExit.Size = new System.Drawing.Size(75, 23);
             this.btnLoginExit.TabIndex = 5;
@@ -102,22 +101,11 @@ namespace CMPG223___Project
             this.label3.TabIndex = 6;
             this.label3.Text = "Login page";
             // 
-            // btnRegister
-            // 
-            this.btnRegister.Location = new System.Drawing.Point(105, 140);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(75, 23);
-            this.btnRegister.TabIndex = 7;
-            this.btnRegister.Text = "Register";
-            this.btnRegister.UseVisualStyleBackColor = true;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 183);
-            this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnLoginExit);
             this.Controls.Add(this.btnLogin);
@@ -141,6 +129,5 @@ namespace CMPG223___Project
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnLoginExit;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnRegister;
     }
 }
