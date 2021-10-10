@@ -19,7 +19,7 @@ namespace CMPG223___Project
             InitializeComponent();
         }
 
-        string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\steph\OneDrive\Documents\GitHub\CMPG223---Project\CMPG223 - Project\ScholarData.mdf;Integrated Security=True";
+        string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\24510777\Documents\GitHub\CMPG223---Project\CMPG223 - Project\ScholarData.mdf;Integrated Security=True";
         SqlConnection conn;
         SqlCommand comm;
         SqlDataAdapter adap;
@@ -123,57 +123,7 @@ namespace CMPG223___Project
             }
         }
 
-        //private void btnSearch_Click(object sender, EventArgs e)
-        //{
-        //    lbDisplay.Items.Clear();
-            
-        //    try
-        //    {
-        //        //travesrse database
-        //        conn.Close();
-        //        conn.Open();
-        //        adap = new SqlDataAdapter();
-        //        ds = new DataSet();
-
-
-        //        string sql = @"SELECT * FROM Dataset WHERE ScholarID LIKE'%" + textBox1.Text + "%'"; 
-                
-
-        //        comm = new SqlCommand(sql, conn);
-                
-
-        //        adap.SelectCommand = comm;
-        //        adap.Fill(ds, "Table");
-
-        //        dbView.DataSource = ds;
-        //        dbView.DataMember = "Table";
-
-        //        //listbox
-
-                
-        //        comm = new SqlCommand(sql, conn);
-        //        theReader = comm.ExecuteReader();
-        //        lbDisplay.Items.Add("ScholarID\tName\tSurname\tSymptoms\tTemperature");
-
-        //        while (theReader.Read())
-        //        {
-
-                    
-        //            lbDisplay.Items.Add(theReader.GetValue(0) + "\t\t" + theReader.GetValue(1) + "\t" + theReader.GetValue(2)  + "\t" + theReader.GetValue(4) + "\t\t" + theReader.GetValue(5));
-
-        //        }
-
-
-        //        conn.Close();
-
-                
-        //    }
-        //    catch (SqlException error)
-        //    {
-        //        MessageBox.Show(error.Message);
-        //    }
-
-        //}
+        
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
